@@ -223,7 +223,7 @@ footer {
   padding-bottom: 20px;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 600px) {
   body {
     padding: 32px 12px;
   }
