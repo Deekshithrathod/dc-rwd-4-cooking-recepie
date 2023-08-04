@@ -37,9 +37,9 @@
 
 ## Overview
 
-|                 Desktop                 |                                  Mobile                                   |
-| :-------------------------------------: | :-----------------------------------------------------------------------: |
-| ![Project On Desktop](view-desktop.png) | ![Demo On Desktop](view-mobile.png) ![Demo On Desktop](view-mobile-1.png) |
+|                    Desktop                     |                   Mobile                   |
+| :--------------------------------------------: | :----------------------------------------: |
+| ![Project On Desktop](public/demo-desktop.png) | ![Demo On Desktop](public/demo-mobile.png) |
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 

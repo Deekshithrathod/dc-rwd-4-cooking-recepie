@@ -1,144 +1,78 @@
-body {
-  margin: 0;
-  padding: 52px max(200px, 20%) 10px;
-
-  position: relative;
-}
 * {
   margin: 0;
+  padding: 0;
 }
 
-header {
-  width: 100%;
-  padding: 0 auto;
+body {
+  padding: 2rem 2rem;
 }
 
 h1 {
-  color: #000;
   font-family: "Playfair Display";
-  font-size: 48px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-header > div {
-  margin-bottom: 44px;
+.head-section {
+  margin-top: 0.75rem;
 
   display: flex;
+  gap: 0.75rem 0;
   align-items: flex-start;
 }
-header > div > img {
-  padding-top: 5px;
-  margin-right: 15px;
+
+.head-section > img {
+  margin-right: 0.75rem;
+  padding-top: 0.25rem;
 }
 
-header > div > span {
-  margin-bottom: auto;
+.head-section > p {
   color: #4f4f4f;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 0.825rem;
   font-style: italic;
   font-weight: 500;
   line-height: normal;
-
-  width: 592px;
 }
 
 header > img {
   width: 100%;
-  max-width: 1500px;
+  margin-top: 2rem;
 }
 
 .container {
   display: flex;
-  margin-top: 48px;
-  max-width: 1500px;
-}
-
-main {
-  width: 80%;
-  padding-right: 40px;
-}
-
-.ingredients > h3 {
-  color: var(--gray-1, #333);
-  font-family: "Playfair Display";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
-  margin-bottom: 32px;
-}
-
-.item {
-  margin-bottom: 26px;
-}
-
-.item > h4 {
-  color: var(--gray-1, #333);
-  font-family: "Playfair Display";
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 32px;
-}
-
-.ingredient {
-  display: flex;
-  margin-bottom: 16px;
-  align-items: flex-start;
-}
-
-.ingredient > input[type="checkbox"] {
-  width: 21px;
-  height: 21px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid var(--gray-3, #828282);
-
-  margin-top: 5px;
-  margin-bottom: auto;
-  margin-right: 16px;
-}
-
-.ingredient > label > p {
-  color: var(--gray-1, #333);
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 156.25% */
-  margin-bottom: 12px;
+  flex-direction: column-reverse;
 }
 
 aside {
-  width: 20%;
-  max-height: 360px;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-
-  padding: 60px 40px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
-aside > div {
-  display: flex;
+aside > div:nth-child(1) {
+  width: 100%;
+  margin-bottom: 1.25rem;
 }
 
-aside > div > span {
-  width: 34px;
+.info {
+  display: flex;
+  align-items: center;
+  padding-right: 2em;
+}
+
+.info > span {
+  margin-right: 0.5rem;
 }
 
 .title {
-  color: var(--gray-4, #bdbdbd);
+  color: #bdbdbd;
   font-family: "Montserrat";
-  font-size: 10px;
+  font-size: 0.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -146,241 +80,245 @@ aside > div > span {
 }
 
 .desc {
-  color: var(--gray-1, #333);
+  color: #333;
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 0.625rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-.instructions > h3 {
-  color: var(--gray-1, #333);
-  font-family: "Playfair Display";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.insruction {
-  margin-top: 28px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.insruction > p.index {
-  color: #fff;
-  font-family: Playfair Display;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  line-height: normal;
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
-  background: var(--orange, #f2994a);
-  margin-right: 12px;
-  border-radius: 6px;
-}
-
-.insruction > p {
-  color: #000;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 
 .highlight {
   color: #f2994a;
 }
 
-.source {
-  font-family: "Montserrat";
-  font-size: 16px;
+main > div > h3 {
+  color: #333;
+  font-family: "Playfair Display";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 2rem;
+}
+
+.item > h4 {
+  color: #333;
+  font-family: "Playfair Display";
+  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
-  line-height: 150%; /* 24px */
-  margin-top: 150px;
-  margin-bottom: 50px;
+  line-height: normal;
+
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
+
+.ingredient {
+  display: flex;
+  align-items: flex-start;
+
+  margin-top: 1rem;
+}
+.striked-ingredient {
+  color: #bdbdbd;
+  text-decoration: line-through;
+}
+
+.ingredient > input[type="checkbox"] {
+  min-width: 1.25rem;
+  height: 1.25rem;
+
+  border-radius: 0.25rem;
+  border: 1px solid #828282;
+  margin-right: 0.5rem;
+}
+
+.ingredient > label > p {
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.instruction {
+  display: flex;
+  margin-top: 0.75rem;
+}
+
+.instruction > div {
+  color: #fff;
+  background-color: #f2994a;
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  height: 2.5rem;
+
+  margin-right: 1rem;
+  padding: 0 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.instruction > p {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.source {
+  color: #bdbdbd;
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 2rem;
+}
+
 .source > a {
-  color: var(--gray-4, #bdbdbd);
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
-  color: #a9a9a9;
-  text-align: center;
+  color: #bdbdbd;
   font-family: "Montserrat";
-  font-size: 14px;
-  font-style: normal;
+  font-size: 0.875rem;
   font-weight: 500;
+  font-style: normal;
   line-height: normal;
+  text-align: center;
 
-  padding-bottom: 20px;
+  margin-top: 5rem;
 }
 
-@media (max-width: 600px) {
+footer > b > a {
+  color: #bdbdbd;
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
   body {
-    padding: 32px 12px;
+    padding: 3rem 0;
+  }
+
+  header {
+    width: 70%;
+    max-width: 60rem;
+    margin: 0 auto;
   }
 
   h1 {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 12px;
+    font-size: 3rem;
   }
 
-  header > div {
-    display: flex;
-    margin-bottom: 24px;
-  }
-
-  header > div > img {
-    padding-top: 5px;
-    margin-right: 15px;
-  }
-
-  header > div > span {
-    font-size: 12px;
-    line-height: 14px;
-    padding-right: 16px;
-  }
-
-  header > img {
-    width: 100%;
-    border-radius: 12px;
-    max-width: 1500px;
+  .head-section > p {
+    font-size: 0.875rem;
+    width: 37.5rem;
   }
 
   .container {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 24px;
-    position: relative;
-  }
-
-  aside {
-    width: 350px;
-    border-radius: 0;
-    padding: 0;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    box-shadow: none;
+
+    width: 70%;
+    max-width: 60rem;
+    margin: 0 auto;
   }
 
-  aside > div:nth-child(1) {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  aside > div {
-    display: flex;
-    width: 30%;
-  }
-
-  aside > div > span {
-    width: 17px;
-    margin-right: 8px;
-  }
-
-  .title {
-    font-size: 8px;
-  }
-
-  .desc {
-    font-size: 10px;
+  .container > img {
+    margin-top: 3rem;
   }
 
   main {
-    width: 100%;
-    margin-top: 32px;
+    width: 70%;
+    margin-top: 3rem;
+    padding-right: 5rem;
   }
 
-  .ingredients > h3 {
-    font-size: 18px;
-    margin-bottom: 12px;
+  aside {
+    background: #fff;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+    width: 15%;
+    height: 25rem;
+    padding: 0 4rem;
+    margin-top: 3rem;
+  }
+
+  .info:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .info {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info > span {
+    font-size: 2.125rem;
+    margin-right: 1rem;
+  }
+
+  .title {
+    font-size: 0.625rem;
+  }
+
+  .desc {
+    font-size: 0.875rem;
+  }
+
+  main > div > h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
   }
 
   .item > h4 {
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-
-  .ingredient {
-    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .ingredient > input[type="checkbox"] {
-    margin-top: 5px;
-    margin-right: 8px;
-    margin-bottom: auto;
+    margin-right: 1rem;
   }
 
   .ingredient > label > p {
-    font-family: "Montserrat";
-    line-height: 25px;
+    font-size: 1rem;
   }
 
   .instructions > h3 {
-    color: var(--gray-1, #333);
-    font-family: "Playfair Display";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    margin: 4rem 0 2rem;
   }
 
-  .insruction {
-    margin-top: 28px;
-    display: flex;
-    align-items: flex-start;
+  .instruction {
+    margin-bottom: 2rem;
   }
 
-  .insruction > p.index {
-    color: #fff;
-    font-family: Playfair Display;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    text-align: center;
-    line-height: normal;
-    width: 36px;
-    height: 36px;
-    flex-shrink: 0;
-    background: var(--orange, #f2994a);
-    margin-right: 12px;
-    border-radius: 6px;
+  .instruction > div {
+    height: 2.25rem;
   }
 
-  .insruction > p {
-    color: #000;
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-
-  .highlight {
-    color: #f2994a;
+  .instruction > p {
+    font-size: 1.25rem;
   }
 
   .source {
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    margin-top: 150px;
-    margin-bottom: 50px;
-  }
-  .source > a {
-    color: var(--gray-4, #bdbdbd);
+    font-size: 1rem;
   }
 }
